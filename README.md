@@ -15,6 +15,9 @@ antoniaelsen@gmail.com
 ## Usage
 TBD
 
+## Acknowledgements
+This little app wouldn't have been possible without the guidance of [the Synaptitude team's guide on smooth face tracking in OpenCV](http://synaptitude.me/blog/smooth-face-tracking-using-opencv/).
+
 ## TODO
 OpenCV facial tracking
 - produces: coordinates
