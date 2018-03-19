@@ -3,7 +3,8 @@
 */
 
 #include <iostream>
-#include "facetracker.h"
+
+#include "spark.h"
 
 int main(int argc, char **argv) {
   if (argc < 2) {
@@ -11,9 +12,8 @@ int main(int argc, char **argv) {
     return 1;
   }
 
-  FaceTracker tracker(argv[1]);
-
-  tracker.run();
+  Spark spark(argv[1]);
+  spark.run();
 
   return 0;
 }

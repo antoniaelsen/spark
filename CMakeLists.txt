@@ -6,7 +6,8 @@ set(CMAKE_CXX_STANDARD 14)
 
 find_package( OpenCV REQUIRED )
 
-add_executable(spark src/main.cpp src/facetracker.cpp)
+FILE(GLOB SOURCES src/*.cpp)
+add_executable(spark src/main.cpp ${SOURCES})
 
 target_link_libraries(spark ${OpenCV_LIBS})
 

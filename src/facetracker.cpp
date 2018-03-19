@@ -1,16 +1,28 @@
 /*
  * Modbot
 */
-#include <iostream>
 #include "facetracker.h"
+
+#include <iostream>
+
+#include "camerapose.h"
+
 
 using namespace cv;
 
-FaceTracker::FaceTracker(std::string haarcascade_filename) {
-  std::cout << "Loading file \"" << haarcascade_filename << "\"." << std::endl;
-  face_cascade_.load(haarcascade_filename);
+FaceTracker::FaceTracker() {
 }
 
+CameraPose FaceTracker::getCoordinates() {
+  // TODO(aelsen)
+  CameraPose pose;
+  return pose;
+}
+
+void FaceTracker::setCascade(std::string filename) {
+  std::cout << "Loading file \"" << filename << "\"." << std::endl;
+  face_cascade_.load(filename);
+}
 
 Mat FaceTracker::detectFaces(Mat input_frame) {
   std::vector<Rect> faces;
@@ -39,7 +51,7 @@ bool FaceTracker::run() {
     capture >> input_frame;
 
     output_frame = detectFaces(input_frame);
-    
+
     imshow("SPARK", output_frame);
     if( waitKey(30) >= 0)     // Pause key
     	break; 
