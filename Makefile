@@ -9,4 +9,4 @@ clean:
 	rm -r build
 
 run:
-	./build/spark
+	./build/spark classifiers/haarcascade_frontalface_alt.xml

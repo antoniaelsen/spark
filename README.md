@@ -15,3 +15,12 @@ antoniaelsen@gmail.com
 ## Usage
 TBD
 
+## TODO
+OpenCV facial tracking
+- produces: coordinates
+
+gRPC client
+- sends:
+  - target pose
+- receives:
+  - current pose
