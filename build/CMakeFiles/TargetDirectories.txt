@@ -1,0 +1,3 @@
+/Users/aelsen/Projects/Modbot/Apps/spark/build/CMakeFiles/rebuild_cache.dir
+/Users/aelsen/Projects/Modbot/Apps/spark/build/CMakeFiles/edit_cache.dir
+/Users/aelsen/Projects/Modbot/Apps/spark/build/CMakeFiles/spark.dir
